@@ -23,7 +23,7 @@ export default function App() {
   const handleContactMe = () => Linking.openURL(`mailto:${data.email}`);
 
   return (
-    <SafeAreaView style={styles.screen} edges={["bottom"]}>
+    <SafeAreaView style={{ flex: 1 }} edges={["bottom"]}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <StatusBar style="light" />
 
@@ -85,9 +85,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
   banner: {
     width: "100%",
     aspectRatio: 16 / 9,
